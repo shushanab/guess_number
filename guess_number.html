@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Gess number</title>
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style>
+        body {
+            padding-top: 20%;
+        }
+        </style>
+    </head>
+    <body >
+    <div class="container">
+        <div class="jumbotron">
+            <h1> Guess The Number Game</h1>
+            <button class="btn btn-primary" onClick="location.reload()">Try Again</button>
+        </div>
+        <!-- div end of .container -->
+        <script>
+						var secretNumber = 12;
+						var guess = Number(prompt("Gess the number"));
+						if ( guess === secretNumber ) {
+						    alert("Congratulations!!! You guess the secret number");
+						} else if (guess > secretNumber) {
+						    alert("Don't worry, but Your number is higer than secret number");
+						} else {
+						    alert("Don't worry, but Your number is lower than secret number");
+						}
+        </script>
+    </body>
+</html>
+
